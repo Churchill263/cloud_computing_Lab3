@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to HillEats</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #ddd5b8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ddd5b8;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .welcome-text h1 {
+            color: #ff7f50;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text p {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .logout-btn {
+            background-color: #fff8e7;
+            color: #ff7f50;
+            border: 2px solid #ff7f50;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #ff7f50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .welcome-text p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="/newlogo.png" alt="HillEats Logo" class="logo">
+        </header>
+
+        <section class="welcome-text">
+            <h1>Welcome to HillEats</h1>
+            <p>Your one-stop destination for ordering food from your favorite vendors around Ashesi University. Browse, order, and track your meals with ease!</p>
+        </section>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        function logout() {
+            // Simulate logging out (you can replace this with your own logout functionality)
+            alert("You have logged out successfully.");
+            window.location.href = "login.html"; // Redirect to login page (adjust URL as needed)
+        }
+    </script>
+
+</body>
+</html>
